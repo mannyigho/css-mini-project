@@ -3,9 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>CSS Mini Project - Media Queries</title>
 </head>
 <body>
-    
+    <header>
+        <div class="headline">
+            CSS Snippet Cheatsheet
+        </div>
+        <div class="headline-text">
+            Ever have trouble recalling the exact syntax for your favourite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it will automatically select all of the code for you to copy.
+        </div>
+    </header>
+    <section class="grid-container">
+        <article class="article1">
+            <div class="article-header">Flexbox Row</div>
+            <div class="article-body">Use these three properties to create a Flexbox row layout.</div>
+            <div class="card">
+                .row {<br/>
+                    &nbsp;&nbsp;display: flex; <br/>
+                    &nbsp;&nbsp;flex-direction: row;<br/>
+                    &nbsp;&nbsp;flex-wrap: wrap;<br/>
+                }
+            </div>
+        </article>
+        <article class="article2">
+            <div class="article-header">Flexbox Column</div>
+            <div class="article-body">Use this to create a Flexbox column layout.</div>
+            <div class="card">
+                .column {<br/>
+                    &nbsp;&nbsp;display: flex; <br/>
+                    &nbsp;&nbsp;flex-direction: column;<br/>
+                }
+            </div>
+        </article>
+        <article class="article3">
+            <div class="article-header">CSS Grid Layout</div>
+            <div class="article-body">Build a 12-column layout using CSS Grid.</div>
+            <div class="card">
+                .grid {<br/>
+                    &nbsp;&nbsp;display: grid; <br/>
+                    &nbsp;&nbsp;width: 100%;<br/>
+                    &nbsp;&nbsp;grid-template-columns: repeat(12, 1fr);<br/>
+                }
+            </div>
+        </article>
+        <article class="article4">
+            <div class="article-header">Linear Gradients</div>
+            <div class="article-body">This will create a background Linear Gradient from top to bottom.</div>
+            <div class="card">
+                .linear-gradient-background {<br/>
+                    &nbsp;&nbsp;background-image: linear-gradient(
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;to bottom, rgba(232, 102, 236, 0.3) 0%, 
+                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;rgba(232, 102, 236, 0.6) 100%
+                    <br/>&nbsp;&nbsp;); <br/>
+                }
+            </div>
+        </article>
+        <article class="article5">
+            <div class="article-header">Box Transition Glow</div>
+            <div class="article-body">Use transitions and box shadow to glow on hover.</div>
+            <div class="card">
+                .code-card .card-header {<br/>
+                    &nbsp;&nbsp;border-radius: 8px; <br/>
+                    &nbsp;&nbsp;transition: all 0.5s ease-in-out;<br/>
+                }
+                <br/><br/>
+                .code-card:hover,<br/>
+                .code-card:hover .card-header {<br/>
+                    &nbsp;&nbsp;box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px <br/>
+                    &nbsp;&nbsp;rgba(232, 102, 236, 1);<br/>
+                }
+            </div>
+        </article>
+        <article class="article6">
+            <div class="article-header">Overlay Card with Title</div>
+            <div class="article-body">Use position properties and negative margins to raise elements higher than their natural starting point.</div>
+            <div class="card">
+                .card-header {<br/>
+                    &nbsp;&nbsp;position: relative; <br/>
+                    &nbsp;&nbsp;margin-top: -20px;<br/>
+                }
+            </div>
+            <div class="grad1"></div>
+        </article>
+    </section>
+    <footer>
+        Made with ❤️ and CSS
+    </footer>
 </body>
 </html>
